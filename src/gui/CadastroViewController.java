@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
@@ -22,6 +23,10 @@ public class CadastroViewController implements Initializable{
 	private PasswordField passwordFieldSenha;
 	@FXML
 	private PasswordField passwordFieldConfirmarSenha;
+	@FXML
+	private Button buttonProximo;
+	@FXML
+	private Button buttonVoltar;
 	
 	@FXML
 	private void getNome() {
@@ -57,6 +62,21 @@ public class CadastroViewController implements Initializable{
 	private void getConfirmarSenhar() {
 		String confirmarSenha = passwordFieldConfirmarSenha.getText();
 		System.out.println(confirmarSenha);
+	}
+	
+	@FXML
+	private void onProximoPressed() {
+		this.getNome();
+		this.getSobreNome();
+		this.getEmail();
+		this.getSecundario();
+		this.getSenha();
+		this.getConfirmarSenhar();
+	}
+	
+	@FXML
+	private void onVoltarPressed() {
+		
 	}
 
 	@Override
