@@ -9,21 +9,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: #47494D;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: #47494D;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CadastroViewController">
    <children>
-      <TextField layoutX="93.0" layoutY="103.0" prefHeight="26.0" prefWidth="184.0" promptText="first name" style="-fx-background-color: dadada;" />
+      <TextField fx:id="textFieldNome" layoutX="93.0" layoutY="103.0" prefHeight="26.0" prefWidth="184.0" promptText="first name" style="-fx-background-color: dadada;" />
       <Label layoutX="39.0" layoutY="103.0" prefHeight="25.0" prefWidth="107.0" text="Nome" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="404.0" layoutY="104.0" prefHeight="26.0" prefWidth="184.0" promptText="last name" style="-fx-background-color: #dadada;" />
+      <TextField fx:id="textFieldSobrenome" layoutX="404.0" layoutY="104.0" prefHeight="26.0" prefWidth="184.0" promptText="last name" style="-fx-background-color: #dadada;" />
       <Label layoutX="306.0" layoutY="104.0" prefHeight="25.0" prefWidth="107.0" text="Sobrenome" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="93.0" layoutY="276.0" prefHeight="26.0" prefWidth="184.0" promptText="example@example.com" style="-fx-background-color: #dadada;" />
+      <TextField fx:id="textFieldEmail" layoutX="93.0" layoutY="276.0" prefHeight="26.0" prefWidth="184.0" promptText="example@example.com" style="-fx-background-color: #dadada;" />
       <Label layoutX="39.0" layoutY="277.0" prefHeight="25.0" prefWidth="107.0" text="Email" textFill="WHITE">
          <font>
             <Font size="14.0" />
@@ -49,7 +49,7 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <PasswordField layoutX="93.0" layoutY="357.0" prefHeight="26.0" prefWidth="184.0" promptText="password" style="-fx-background-color: dadada;" />
+      <PasswordField fx:id="passwordFieldSenha" layoutX="93.0" layoutY="357.0" prefHeight="26.0" prefWidth="184.0" promptText="password" style="-fx-background-color: dadada;" />
       <Label layoutX="40.0" layoutY="358.0" prefHeight="25.0" prefWidth="107.0" text="Senha" textFill="WHITE">
          <font>
             <Font size="14.0" />
@@ -60,15 +60,15 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <PasswordField layoutX="404.0" layoutY="358.0" prefHeight="26.0" prefWidth="184.0" promptText="confirm password" style="-fx-background-color: dadada;" />
-      <TextField layoutX="404.0" layoutY="276.0" prefHeight="26.0" prefWidth="184.0" promptText="example@example.com" style="-fx-background-color: dadada;" />
+      <PasswordField fx:id="passwordFieldConfirmarSenha" layoutX="404.0" layoutY="358.0" prefHeight="26.0" prefWidth="184.0" promptText="confirm password" style="-fx-background-color: dadada;" />
+      <TextField fx:id="textFieldSecundario" layoutX="404.0" layoutY="276.0" prefHeight="26.0" prefWidth="184.0" promptText="example@example.com" style="-fx-background-color: dadada;" />
       <Label layoutX="306.0" layoutY="277.0" prefHeight="25.0" prefWidth="107.0" text="Secundário" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="528.0" layoutY="460.0" mnemonicParsing="false" style="-fx-background-color: #fff; -fx-background-radius: 20;" text="Próximo" textFill="#db0a3b" />
-      <Button layoutX="50.0" layoutY="460.0" mnemonicParsing="false" style="-fx-background-color: #fff; -fx-background-radius: 20;" text="Voltar" textFill="#db0a3b" />
+      <Button fx:id="buttonProximo" layoutX="528.0" layoutY="460.0" mnemonicParsing="false" onAction="#onProximoPressed" style="-fx-background-color: #fff; -fx-background-radius: 20;" text="Próximo" textFill="#db0a3b" />
+      <Button fx:id="buttonVoltar" layoutX="50.0" layoutY="460.0" mnemonicParsing="false" onAction="#onVoltarPressed" style="-fx-background-color: #fff; -fx-background-radius: 20;" text="Voltar" textFill="#db0a3b" />
       <MenuButton layoutX="98.0" layoutY="191.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="107.0" text="gender" textFill="#db0a3b70">
         <items>
           <MenuItem mnemonicParsing="false" text="Masculino Cis" />
