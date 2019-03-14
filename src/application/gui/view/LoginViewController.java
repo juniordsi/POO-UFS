@@ -1,4 +1,4 @@
-package gui;
+package application.gui.view;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -50,5 +50,17 @@ public class LoginViewController implements Initializable {
 	public void initialize(URL uri, ResourceBundle rb) {
 
 	}
+	
+//	String path
+	
+//	@FXML
+//	private void loadView() {
+//		try {
+//			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/CadastroView.fxml"));
+//			AnchorPane newView = loader.load();
+//		} catch (IOException e) {
+//			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
+//		}
+//	}
 
 }

@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="500.0" maxWidth="500.0" minHeight="400.0" minWidth="400.0" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #fff; -fx-border-radius: 20; -fx-border-color: #9C9EA1;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginViewController">
+<AnchorPane maxHeight="500.0" maxWidth="500.0" minHeight="400.0" minWidth="400.0" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #fff; -fx-border-radius: 20; -fx-border-color: #9C9EA1;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.gui.view.LoginViewController">
    <children>
       <ImageView fitHeight="120.0" fitWidth="181.0" layoutX="173.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-focus-traversable: 10;">
          <image>
-            <Image url="@../../images/logo-preto-branco.png" />
+            <Image url="@../../../../images/logo-preto-branco.png" />
          </image>
       </ImageView>
       <TextField id="textFieldUser" fx:id="textFieldUser" layoutX="164.0" layoutY="214.0" onAction="#setLogin" prefHeight="26.0" prefWidth="194.0" promptText="user" style="-fx-background-color: #47494D;" />
@@ -28,7 +28,7 @@
          </font>
       </Label>
       <Button fx:id="buttonEntrar" layoutX="310.0" layoutY="341.0" mnemonicParsing="false" onAction="#onButtonEntrarAction" style="-fx-background-radius: 20; -fx-background-color: #db0a3b;" text="Entrar" textFill="WHITE" />
-      <Button fx:id="buttonCadastrar" layoutX="185.0" layoutY="406.0" mnemonicParsing="false" onAction="#loadView" style="-fx-border-radius: 20; -fx-border-color: #db0a3b; -fx-background-color: #fff;" text="Não possui cadastro?" textFill="#db0a3b" />
+      <Button fx:id="buttonCadastrar" layoutX="185.0" layoutY="406.0" mnemonicParsing="false" style="-fx-border-radius: 20; -fx-border-color: #db0a3b; -fx-background-color: #fff;" text="Não possui cadastro?" textFill="#db0a3b" />
       <PasswordField id="passwordFieldPassword" fx:id="passwordFieldPassword" layoutX="164.0" layoutY="299.0" onAction="#setPassword" prefHeight="26.0" prefWidth="194.0" promptText="password" style="-fx-background-color: #47494D;" />
    </children>
 </AnchorPane>

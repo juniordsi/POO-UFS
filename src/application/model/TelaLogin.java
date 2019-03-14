@@ -1,4 +1,4 @@
-package application;
+package application.model;
 
 import java.io.IOException;
 import javafx.application.Application;
@@ -11,7 +11,7 @@ public class TelaLogin extends Application {
 	@Override
 	public void start(Stage stage) {
 		try {
-			Parent parent = FXMLLoader.load(getClass().getResource("/gui/LoginView.fxml"));
+			Parent parent = FXMLLoader.load(getClass().getResource("/application/gui/view/LoginView.fxml"));
 			Scene scene = new Scene(parent);
 			stage.setScene(scene);
 			stage.setTitle("Login");

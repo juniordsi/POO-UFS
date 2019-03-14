@@ -1,32 +1,30 @@
-package gui;
+package application.gui.view;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TextField;
 
 public class CadastroViewController implements Initializable{
 	
-	@FXML
-	private TextField textFieldNome;
-	@FXML
-	private TextField textFieldSobrenome;
-	@FXML
-	private TextField textFieldEmail;
-	@FXML
-	private TextField textFieldSecundario;
-	@FXML
-	private PasswordField passwordFieldSenha;
-	@FXML
-	private PasswordField passwordFieldConfirmarSenha;
-	@FXML
-	private Button buttonProximo;
-	@FXML
-	private Button buttonVoltar;
+	@FXML private TextField textFieldNome;
+	@FXML private TextField textFieldSobrenome;
+	@FXML private TextField textFieldEmail;
+	@FXML private TextField textFieldSecundario;
+	@FXML private PasswordField passwordFieldSenha;
+	@FXML private PasswordField passwordFieldConfirmarSenha;
+	@FXML private Button buttonProximo;
+	@FXML private Button buttonVoltar;
+	@FXML private SplitMenuButton menuButtonGender;
+	@FXML private MenuItem menuItemMasc;
+	@FXML private MenuItem menuItemFem;
 	
 	@FXML
 	private void getNome() {
@@ -72,6 +70,19 @@ public class CadastroViewController implements Initializable{
 		this.getSecundario();
 		this.getSenha();
 		this.getConfirmarSenhar();
+	}
+	
+	@FXML
+	private void onMenuGenderChoiced(Event event) {
+		if (event.getSource() == menuItemMasc) {
+			menuButtonGender.setText("Man");
+			menuButtonGender.setOpacity(1);
+			System.out.println(menuItemMasc.getText());
+		} else {
+			menuButtonGender.setText("Woman");
+			System.out.println(menuItemFem.getText());
+			menuButtonGender.setOpacity(1);
+		}
 	}
 	
 	@FXML

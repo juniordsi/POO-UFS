@@ -1,4 +1,4 @@
-package application;
+package application.model;
 
 import java.io.IOException;
 import javafx.application.Application;
@@ -11,7 +11,7 @@ public class Feed extends Application{
 	@Override
 	public void start(Stage stage) {
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/FeedView.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/gui/view/FeedView.fxml"));
 			ScrollPane scrollPane = loader.load();
 			scrollPane.setFitToHeight(true);
 			scrollPane.setFitToWidth(true);

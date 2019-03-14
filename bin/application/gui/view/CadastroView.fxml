@@ -2,14 +2,14 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: #47494D;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CadastroViewController">
+<AnchorPane prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: #47494D;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.gui.view.CadastroViewController">
    <children>
       <TextField fx:id="textFieldNome" layoutX="93.0" layoutY="103.0" prefHeight="26.0" prefWidth="184.0" promptText="first name" style="-fx-background-color: dadada;" />
       <Label layoutX="39.0" layoutY="103.0" prefHeight="25.0" prefWidth="107.0" text="Nome" textFill="WHITE">
@@ -69,20 +69,12 @@
       </Label>
       <Button fx:id="buttonProximo" layoutX="528.0" layoutY="460.0" mnemonicParsing="false" onAction="#onProximoPressed" style="-fx-background-color: #fff; -fx-background-radius: 20;" text="Próximo" textFill="#db0a3b" />
       <Button fx:id="buttonVoltar" layoutX="50.0" layoutY="460.0" mnemonicParsing="false" onAction="#onVoltarPressed" style="-fx-background-color: #fff; -fx-background-radius: 20;" text="Voltar" textFill="#db0a3b" />
-      <MenuButton layoutX="98.0" layoutY="191.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="107.0" text="gender" textFill="#db0a3b70">
+      <TextField layoutX="404.0" layoutY="191.0" prefHeight="26.0" prefWidth="184.0" promptText="birthday" style="-fx-background-color: #dadada;" />
+      <SplitMenuButton fx:id="menuButtonGender" layoutX="93.0" layoutY="193.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="184.0" text=" gender" textFill="#00000041">
         <items>
-          <MenuItem mnemonicParsing="false" text="Masculino Cis" />
-          <MenuItem mnemonicParsing="false" text="Feminino Cis" />
-            <MenuItem mnemonicParsing="false" text="Masculino Trans" />
-            <MenuItem mnemonicParsing="false" text="Femino Trans" />
-            <MenuItem mnemonicParsing="false" text="Outro" />
+            <MenuItem fx:id="menuItemMasc" mnemonicParsing="false" onAction="#onMenuGenderChoiced" text="Masculino" />
+            <MenuItem fx:id="menuItemFem" mnemonicParsing="false" onAction="#onMenuGenderChoiced" text="Feminino" />
         </items>
-      </MenuButton>
-      <MenuButton layoutX="404.0" layoutY="190.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="107.0" text="birthday" textFill="#db0a3b70">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
+      </SplitMenuButton>
    </children>
 </AnchorPane>

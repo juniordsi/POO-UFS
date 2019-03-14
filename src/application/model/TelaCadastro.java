@@ -1,4 +1,4 @@
-package application;
+package application.model;
 
 import java.io.IOException;
 
@@ -12,7 +12,7 @@ public class TelaCadastro extends Application {
 	@Override
 	public void start(Stage stage) {
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/CadastroView.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/gui/view/CadastroView.fxml"));
 			AnchorPane anchorPane = loader.load();
 			
 			Scene telaCadastro = new Scene(anchorPane);
