@@ -11,7 +11,8 @@
 
 ### Interface
 - Tela de Login
-	![Login](http://imgbox.com/5GfHwvpc)
+	![Login](https://uploaddeimagens.com.br/imagens/login-png-a94b7c4c-b6ad-4972-900f-898d5ebaed13)
+
 
 - Tela de Cadastro
-	![Cadastro](http://imgbox.com/XFQ7XqMe)
+	![Cadastro](https://uploaddeimagens.com.br/imagens/cadastro-png-27faf0de-80f1-42cf-9aad-aa0dfcada694)
