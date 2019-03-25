@@ -13,17 +13,17 @@
 
 ### Logo
 - Poogram
-	![Logo](https://drive.google.com/open?id=186EyhI60eVfeLkQVYkS0uuWKsBAAeqNc)
+	![Logo](https://user-images.githubusercontent.com/36522393/54891265-9775a100-4e8b-11e9-9366-21776f8a63d5.png)
 
 ### Telas
 - Tela de Início
-	![Início](https://drive.google.com/open?id=186EyhI60eVfeLkQVYkS0uuWKsBAAeqNc)
+	![Início](https://user-images.githubusercontent.com/36522393/54892196-60a18a00-4e8f-11e9-8501-9f07cecd9d4e.png)
 - Tela de Login
-	![Login](https://drive.google.com/open?id=186EyhI60eVfeLkQVYkS0uuWKsBAAeqNc)
+	![Login](https://user-images.githubusercontent.com/36522393/54891946-36030180-4e8e-11e9-8ce8-d8cd7b226cb5.jpg)
 - Tela de Cadastro
-	![Cadastro](https://drive.google.com/open?id=186EyhI60eVfeLkQVYkS0uuWKsBAAeqNc)
+	![Cadastro](https://user-images.githubusercontent.com/36522393/54892200-64cda780-4e8f-11e9-8bf3-eb2c7e50e398.png)
 - Tela de Feed
-	![Feed](https://drive.google.com/open?id=186EyhI60eVfeLkQVYkS0uuWKsBAAeqNc)
+	![Feed](https://user-images.githubusercontent.com/36522393/54891932-22f03180-4e8e-11e9-8aa5-cbd71f279e59.jpg)
 - Tela de Busca
-	![Busca](https://drive.google.com/open?id=186EyhI60eVfeLkQVYkS0uuWKsBAAeqNc)
+	![Busca](https://user-images.githubusercontent.com/36522393/54892203-6a2af200-4e8f-11e9-8d0e-f1d705a2a57b.png)
 
