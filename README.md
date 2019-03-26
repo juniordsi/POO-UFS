@@ -22,7 +22,7 @@
 - Tela de Início
 
 
-	![Início](https://user-images.githubusercontent.com/36522393/54892196-60a18a00-4e8f-11e9-8501-9f07cecd9d4e.png?w=500)
+	![Início](https://user-images.githubusercontent.com/36522393/54967740-02d87500-4f57-11e9-9a65-a97e02932d2d.gif)
 
 
 
