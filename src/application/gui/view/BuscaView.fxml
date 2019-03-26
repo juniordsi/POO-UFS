@@ -19,7 +19,7 @@
                   <Font name="Arial" size="15.0" />
                </font>
             </TextField>
-            <ImageView fitHeight="99.0" fitWidth="110.0" layoutX="611.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="99.0" fitWidth="110.0" layoutX="611.0" layoutY="15.0" pickOnBounds="true">
                <image>
                   <Image url="@../../../../images/feed1.png" />
                </image>
@@ -34,19 +34,37 @@
    <center>
       <AnchorPane BorderPane.alignment="CENTER">
          <children>
-            <Pane layoutX="287.0" layoutY="72.0" prefHeight="505.0" prefWidth="446.0" style="-fx-border-color: #0e2342; -fx-background-radius: 69; -fx-border-radius: 69;">
+            <Pane layoutX="288.0" layoutY="72.0" prefHeight="505.0" prefWidth="446.0" style="-fx-border-color: #0e2342; -fx-background-radius: 69; -fx-border-radius: 69;">
                <children>
-                  <ImageView fx:id="img" fitHeight="143.0" fitWidth="160.0" layoutX="70.0" layoutY="28.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="img" fitHeight="143.0" fitWidth="160.0" layoutX="67.0" layoutY="13.0" opacity="0.0" pickOnBounds="true">
                      <image>
                         <Image url="@../../../../images/botões%20feed.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="seguir" layoutX="280.0" layoutY="100.0" mnemonicParsing="false" onAction="#seguir" opacity="0.0" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #0e2342; -fx-background-radius: 69;" text="seguir" textFill="WHITE" />
-                  <Label fx:id="seguidores" layoutX="76.0" layoutY="154.0" opacity="0.0" text="Seguidores" />
-                  <Label fx:id="sgdrs" layoutX="91.0" layoutY="181.0" opacity="0.0" text="sgdrs" />
-                  <Label fx:id="seguindo" layoutX="177.0" layoutY="154.0" opacity="0.0" text="Seguindo" />
-                  <Label fx:id="sgnd" layoutX="189.0" layoutY="181.0" opacity="0.0" text="sgnd" />
-                  <Label fx:id="name" layoutX="300.0" layoutY="67.0" opacity="0.0" text="name" />
+                  <Button fx:id="seguir" layoutX="280.0" layoutY="100.0" mnemonicParsing="false" onAction="#seguir" opacity="0.0" prefHeight="35.0" prefWidth="81.0" style="-fx-background-color: #0e2342; -fx-background-radius: 69;" text="seguir" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Label fx:id="seguidores" layoutX="75.0" layoutY="171.0" opacity="0.0" text="Seguidores" textFill="#0e2342">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="sgdrs" layoutX="75.0" layoutY="199.0" opacity="0.0" text="sgdrs" textFill="#eb0045">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="seguindo" layoutX="177.0" layoutY="171.0" opacity="0.0" text="Seguindo" textFill="#0e2342">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="sgnd" layoutX="177.0" layoutY="197.0" opacity="0.0" text="sgnd" textFill="#eb0045">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="name" layoutX="280.0" layoutY="68.0" opacity="0.0" text="name" textFill="#0e2342">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
                   <Label fx:id="nenhumResultado" layoutX="58.0" layoutY="113.0" opacity="0.0" text="NENHUM RESULTADO ENCONTRADO" textFill="#0e2342">
                      <font>
                         <Font size="20.0" />

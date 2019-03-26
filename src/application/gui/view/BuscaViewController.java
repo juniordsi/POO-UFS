@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -58,12 +59,13 @@ public class BuscaViewController implements Initializable{
 		UsuarioDAO dao = new UsuarioDAO();
 		if (seguir.getText().equals("seguir")) {
 			seguir.setText("seguindo");
-			usuario = dao.somaSeguidor(pesquisar.getText());
-			atualizaInfo(usuario);
+			sgdrs.setText(String.valueOf(Integer.parseInt(sgdrs.getText()) + 1));
+			//seguindo(usuario);
 		} else {
 			seguir.setText("seguir");
-			usuario = dao.subtraiSeguidor(pesquisar.getText());
-			atualizaInfo(usuario);
+			sgdrs.setText(String.valueOf(Integer.parseInt(sgdrs.getText()) - 1));
+			//usuario = dao.subtraiSeguidor(pesquisar.getText());
+			//seguindo(usuario);
 		}
 	}
 	
@@ -81,6 +83,7 @@ public class BuscaViewController implements Initializable{
 		if (usuario == null) {
 			nenhumResultado.setOpacity(1);
 		} else {
+			nenhumResultado.setOpacity(0);
 			atualizaInfo(usuario);
 			mostraInfo();
 			
@@ -95,9 +98,10 @@ public class BuscaViewController implements Initializable{
 		usuario = buscar.busca(pesquisar.getText());
 		resultadoDaPesquisa.setText("Resultado da pesquisa por: "+pesquisar.getText());
 		
-		if (usuario == null) {
+		if (usuario != null) {
 			nenhumResultado.setOpacity(1);
 		} else {
+			nenhumResultado.setOpacity(0);
 			atualizaInfo(usuario);
 			mostraInfo();
 		}
@@ -113,10 +117,15 @@ public class BuscaViewController implements Initializable{
 		img.setOpacity(1);
 	}
 	
+	private void seguindo(Usuario usuario) {
+		sgdrs.setText(String.valueOf(usuario.getFollowers()));
+	}
+	
 	private void atualizaInfo(Usuario usuario) {
 		name.setText(usuario.getName());
 		sgdrs.setText(String.valueOf(usuario.getFollowers()));
 		sgnd.setText(String.valueOf(usuario.getFollowing()));
+		img.setImage(new Image("file:///"+usuario.getPerfil_img()));
 	}
 	
 	public void fechar() {

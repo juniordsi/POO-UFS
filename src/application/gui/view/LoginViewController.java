@@ -3,64 +3,76 @@ package application.gui.view;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import application.model.TelaCadastro;
+import application.model.TelaFeed;
+import application.model.TelaLogin;
+import application.model.Usuario;
+import application.model.dao.UsuarioDAO;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 public class LoginViewController implements Initializable {
 
-	@FXML
-	private TextField textFieldUser;
-
-	@FXML
-	private PasswordField passwordFieldPassword;
-
-	@FXML
-	private Button buttonEntrar;
-
-	@FXML
-	private Button buttonCadastrar;
-
-	@FXML
-	public void onButtonEntrarAction() {
-		this.setLogin();
-		this.setPassword();
-	}
+	@FXML private TextField textFieldUser;
+	@FXML private PasswordField passwordFieldPassword;
+	@FXML private Button buttonEntrar;
+	@FXML private Button buttonCadastrar;
+	@FXML private Label labelErroLogin;
 	
-	@FXML
-	public void onEnterPressed() {
-		this.onButtonEntrarAction();
-	}
-
-	@FXML
-	private void setLogin() {
-		String login = textFieldUser.getText();
-		System.out.println(login);
-	}
-
-	@FXML
-	private void setPassword() {
-		String password = passwordFieldPassword.getText();
-		System.out.println(password);
-	}
-
+	private static String usuario;
+	
 	@Override
-	public void initialize(URL uri, ResourceBundle rb) {
-
+	public void initialize(URL url, ResourceBundle rb) {
+		
+		buttonEntrar.setOnMouseClicked((MouseEvent e)->{
+				this.logar();
+		});
+		
+		buttonCadastrar.setOnMouseClicked((MouseEvent e)->{
+			TelaCadastro cadastro = new TelaCadastro();
+			cadastro.start(new Stage());
+			fecharTelaLogin();
+		});
+			
 	}
 	
-//	String path
 	
-//	@FXML
-//	private void loadView() {
-//		try {
-//			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/CadastroView.fxml"));
-//			AnchorPane newView = loader.load();
-//		} catch (IOException e) {
-//			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
-//		}
-//	}
+	@FXML
+	private String getLogin() {
+		usuario = textFieldUser.getText();
+		return usuario;
+	}
 
+	@FXML
+	private String getPassword() {
+		return passwordFieldPassword.getText();
+	}
+	
+	
+	public static String setLogin() {
+		return usuario;
+	}
+	
+	public void logar() {
+		Usuario usuario = new Usuario(this.getLogin(), this.getPassword());
+		UsuarioDAO dao = new UsuarioDAO();
+		if(dao.logar(usuario)) {
+			TelaFeed feed = new TelaFeed();
+			feed.start(new Stage());
+		} else {
+			labelErroLogin.setOpacity(1);
+		}
+		
+	}
+	
+	public static void fecharTelaLogin() {
+		TelaLogin.getStage().close();
+	}
+	
 }

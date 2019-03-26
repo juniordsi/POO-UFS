@@ -3,11 +3,12 @@ package application.gui.view;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import application.model.Iniciar;
+import application.model.TelaIniciar;
 import application.model.TelaLogin;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
@@ -15,6 +16,7 @@ import javafx.stage.Stage;
 public class IniciarController implements Initializable {
 	
 	@FXML Button buttonTeste;
+	@FXML ImageView img;
 
 	@Override
 	public void initialize(URL uri, ResourceBundle rb) {
@@ -31,7 +33,7 @@ public class IniciarController implements Initializable {
 	}
 	
 	public static void fechar() {
-		Iniciar.getStage().close();
+		TelaIniciar.getStage().close();
 	}
 
 }
