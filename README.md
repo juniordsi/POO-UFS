@@ -3,7 +3,7 @@
 ## PooGram
 	Poogram é uma projeto, desenvolvido utilizando padrão MVC, cujo objetivo  é simular
 	o funcionamento de uma rede social. A aplicação foi desenvolvida em Java, utilizando
-	as bibliotecas de  interface gráfica JavaFX e banco de dados MySQL Connector Java.
+	a biblioteca de interface gráfica JavaFX e banco de dados MySQL.
 
 ### Ferramentas utilizadas
 - IDE: [Eclipse](https://www.eclipse.org/)
