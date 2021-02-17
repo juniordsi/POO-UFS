@@ -6,7 +6,7 @@
 ![Eclipse](https://img.shields.io/badge/-Eclipse-purple?style=flat-square&logo=eclipse)
 ![Scene Builder](https://img.shields.io/badge/-Scene_Builder-green?style=flat-square&logo=sceneBuilder)
 
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=juniordsi&repo=Teste-de-Software-UFS&show_owner=true&show_icons=true&theme=dark&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=juniordsi&repo=POO-UFS&show_owner=true&show_icons=true&theme=dark&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
 
 	Poogram é uma projeto, desenvolvido utilizando padrão MVC, cujo objetivo  é simular
 	o funcionamento de uma rede social. A aplicação foi desenvolvida em Java, utilizando
