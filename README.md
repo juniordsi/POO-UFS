@@ -1,6 +1,13 @@
 # Projeto de conclusão da disciplina Programação Orientada a Objetos - 2018.2
-
 ## PooGram
+![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java)
+![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Eclipse](https://img.shields.io/badge/-Eclipse-purple?style=flat-square&logo=eclipse)
+![Scene Builder](https://img.shields.io/badge/-Scene_Builder-green?style=flat-square&logo=sceneBuilder)
+
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=juniordsi&repo=Teste-de-Software-UFS&show_owner=true&show_icons=true&theme=dark&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
+
 	Poogram é uma projeto, desenvolvido utilizando padrão MVC, cujo objetivo  é simular
 	o funcionamento de uma rede social. A aplicação foi desenvolvida em Java, utilizando
 	a biblioteca de interface gráfica JavaFX e banco de dados MySQL.
